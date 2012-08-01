@@ -7,15 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E7244C615C9EC3600C4E725 /* cblocks.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3E7244BE15C9EC3600C4E725 /* cblocks.nu */; };
+		3E7244C715C9EC3600C4E725 /* cocoa.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3E7244BF15C9EC3600C4E725 /* cocoa.nu */; };
+		3E7244C815C9EC3600C4E725 /* coredata.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3E7244C015C9EC3600C4E725 /* coredata.nu */; };
+		3E7244C915C9EC3600C4E725 /* match.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3E7244C115C9EC3600C4E725 /* match.nu */; };
+		3E7244CA15C9EC3600C4E725 /* math.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3E7244C215C9EC3600C4E725 /* math.nu */; };
+		3E7244CB15C9EC3600C4E725 /* nu.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3E7244C315C9EC3600C4E725 /* nu.nu */; };
+		3E7244CC15C9EC3600C4E725 /* template.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3E7244C415C9EC3600C4E725 /* template.nu */; };
+		3E7244CD15C9EC3600C4E725 /* test.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3E7244C515C9EC3600C4E725 /* test.nu */; };
 		3EA10B8E15C9C7B4002E791F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA10B8D15C9C7B4002E791F /* UIKit.framework */; };
 		3EA10B9015C9C7B4002E791F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA10B8F15C9C7B4002E791F /* Foundation.framework */; };
 		3EA10B9215C9C7B4002E791F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA10B9115C9C7B4002E791F /* CoreGraphics.framework */; };
 		3EA10B9815C9C7B4002E791F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EA10B9615C9C7B4002E791F /* InfoPlist.strings */; };
 		3EA10B9A15C9C7B4002E791F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA10B9915C9C7B4002E791F /* main.m */; };
-		3EA10B9E15C9C7B4002E791F /* NPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA10B9D15C9C7B4002E791F /* NPAppDelegate.m */; };
+		3EA10BD315C9CB67002E791F /* Nu.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA10BD215C9CB61002E791F /* Nu.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3EA10BDA15C9CBC5002E791F /* ffi.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EA10BD515C9CBC5002E791F /* ffi.c */; };
+		3EA10BDB15C9CBC5002E791F /* ffi.S in Sources */ = {isa = PBXBuildFile; fileRef = 3EA10BD715C9CBC5002E791F /* ffi.S */; };
+		3EA10BDC15C9CBC5002E791F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3EA10BD815C9CBC5002E791F /* LICENSE */; };
+		3EA10BDD15C9CBC5002E791F /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 3EA10BD915C9CBC5002E791F /* README.markdown */; };
+		3EA10CA815C9D8B1002E791F /* main.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3EA10C8315C9D304002E791F /* main.nu */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E7244BE15C9EC3600C4E725 /* cblocks.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cblocks.nu; sourceTree = "<group>"; };
+		3E7244BF15C9EC3600C4E725 /* cocoa.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cocoa.nu; sourceTree = "<group>"; };
+		3E7244C015C9EC3600C4E725 /* coredata.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coredata.nu; sourceTree = "<group>"; };
+		3E7244C115C9EC3600C4E725 /* match.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = match.nu; sourceTree = "<group>"; };
+		3E7244C215C9EC3600C4E725 /* math.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = math.nu; sourceTree = "<group>"; };
+		3E7244C315C9EC3600C4E725 /* nu.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nu.nu; sourceTree = "<group>"; };
+		3E7244C415C9EC3600C4E725 /* template.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.nu; sourceTree = "<group>"; };
+		3E7244C515C9EC3600C4E725 /* test.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.nu; sourceTree = "<group>"; };
 		3EA10B8915C9C7B4002E791F /* NuPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NuPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA10B8D15C9C7B4002E791F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3EA10B8F15C9C7B4002E791F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -24,8 +45,14 @@
 		3EA10B9715C9C7B4002E791F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3EA10B9915C9C7B4002E791F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3EA10B9B15C9C7B4002E791F /* NuPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NuPhone-Prefix.pch"; sourceTree = "<group>"; };
-		3EA10B9C15C9C7B4002E791F /* NPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPAppDelegate.h; sourceTree = "<group>"; };
-		3EA10B9D15C9C7B4002E791F /* NPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NPAppDelegate.m; sourceTree = "<group>"; };
+		3EA10BD115C9CB61002E791F /* Nu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nu.h; sourceTree = "<group>"; };
+		3EA10BD215C9CB61002E791F /* Nu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nu.m; sourceTree = "<group>"; };
+		3EA10BD515C9CBC5002E791F /* ffi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ffi.c; sourceTree = "<group>"; };
+		3EA10BD615C9CBC5002E791F /* ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
+		3EA10BD715C9CBC5002E791F /* ffi.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = ffi.S; sourceTree = "<group>"; };
+		3EA10BD815C9CBC5002E791F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3EA10BD915C9CBC5002E791F /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		3EA10C8315C9D304002E791F /* main.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.nu; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +69,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E7244BD15C9EC3600C4E725 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3E7244BE15C9EC3600C4E725 /* cblocks.nu */,
+				3E7244BF15C9EC3600C4E725 /* cocoa.nu */,
+				3E7244C015C9EC3600C4E725 /* coredata.nu */,
+				3E7244C115C9EC3600C4E725 /* match.nu */,
+				3E7244C215C9EC3600C4E725 /* math.nu */,
+				3E7244C315C9EC3600C4E725 /* nu.nu */,
+				3E7244C415C9EC3600C4E725 /* template.nu */,
+				3E7244C515C9EC3600C4E725 /* test.nu */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		3EA10B7E15C9C7B4002E791F = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +114,9 @@
 		3EA10B9315C9C7B4002E791F /* NuPhone */ = {
 			isa = PBXGroup;
 			children = (
-				3EA10B9C15C9C7B4002E791F /* NPAppDelegate.h */,
-				3EA10B9D15C9C7B4002E791F /* NPAppDelegate.m */,
+				3EA10C7815C9D304002E791F /* nu */,
+				3EA10BD415C9CBC5002E791F /* libffi */,
+				3EA10BAA15C9CAD2002E791F /* Nu */,
 				3EA10B9415C9C7B4002E791F /* Supporting Files */,
 			);
 			path = NuPhone;
@@ -88,6 +131,36 @@
 				3EA10B9B15C9C7B4002E791F /* NuPhone-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EA10BAA15C9CAD2002E791F /* Nu */ = {
+			isa = PBXGroup;
+			children = (
+				3EA10BD115C9CB61002E791F /* Nu.h */,
+				3EA10BD215C9CB61002E791F /* Nu.m */,
+			);
+			name = Nu;
+			sourceTree = "<group>";
+		};
+		3EA10BD415C9CBC5002E791F /* libffi */ = {
+			isa = PBXGroup;
+			children = (
+				3EA10BD515C9CBC5002E791F /* ffi.c */,
+				3EA10BD615C9CBC5002E791F /* ffi.h */,
+				3EA10BD715C9CBC5002E791F /* ffi.S */,
+				3EA10BD815C9CBC5002E791F /* LICENSE */,
+				3EA10BD915C9CBC5002E791F /* README.markdown */,
+			);
+			path = libffi;
+			sourceTree = "<group>";
+		};
+		3EA10C7815C9D304002E791F /* nu */ = {
+			isa = PBXGroup;
+			children = (
+				3E7244BD15C9EC3600C4E725 /* lib */,
+				3EA10C8315C9D304002E791F /* main.nu */,
+			);
+			path = nu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +216,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA10B9815C9C7B4002E791F /* InfoPlist.strings in Resources */,
+				3EA10BDC15C9CBC5002E791F /* LICENSE in Resources */,
+				3EA10BDD15C9CBC5002E791F /* README.markdown in Resources */,
+				3EA10CA815C9D8B1002E791F /* main.nu in Resources */,
+				3E7244C615C9EC3600C4E725 /* cblocks.nu in Resources */,
+				3E7244C715C9EC3600C4E725 /* cocoa.nu in Resources */,
+				3E7244C815C9EC3600C4E725 /* coredata.nu in Resources */,
+				3E7244C915C9EC3600C4E725 /* match.nu in Resources */,
+				3E7244CA15C9EC3600C4E725 /* math.nu in Resources */,
+				3E7244CB15C9EC3600C4E725 /* nu.nu in Resources */,
+				3E7244CC15C9EC3600C4E725 /* template.nu in Resources */,
+				3E7244CD15C9EC3600C4E725 /* test.nu in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA10B9A15C9C7B4002E791F /* main.m in Sources */,
-				3EA10B9E15C9C7B4002E791F /* NPAppDelegate.m in Sources */,
+				3EA10BD315C9CB67002E791F /* Nu.m in Sources */,
+				3EA10BDA15C9CBC5002E791F /* ffi.c in Sources */,
+				3EA10BDB15C9CBC5002E791F /* ffi.S in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +310,14 @@
 		3EA10BA215C9C7B4002E791F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../nu/nu\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NuPhone/NuPhone-Prefix.pch";
 				INFOPLIST_FILE = "NuPhone/NuPhone-Info.plist";
+				KEEP_PRIVATE_EXTERNS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -235,9 +326,14 @@
 		3EA10BA315C9C7B4002E791F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../nu/nu\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NuPhone/NuPhone-Prefix.pch";
 				INFOPLIST_FILE = "NuPhone/NuPhone-Info.plist";
+				KEEP_PRIVATE_EXTERNS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -262,6 +358,7 @@
 				3EA10BA315C9C7B4002E791F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

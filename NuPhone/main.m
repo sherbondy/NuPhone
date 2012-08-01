@@ -7,12 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Nu.h"
 
-#import "NPAppDelegate.h"
-
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
+    NuInit();
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([NPAppDelegate class]));
+        NSError *error;
+        NSString *main_nu = [NSString stringWithContentsOfFile:
+                             [[NSBundle mainBundle] pathForResource:@"main" ofType:@"nu"]
+                                                      encoding:NSUTF8StringEncoding
+                                                         error:&error];
+        
+        id parser = [Nu parser];
+        [parser parseEval:main_nu];
     }
+    return UIApplicationMain(argc, argv, nil, @"NPAppDelegate");
 }
