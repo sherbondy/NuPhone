@@ -15,6 +15,7 @@
 		3E7244CB15C9EC3600C4E725 /* nu.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3E7244C315C9EC3600C4E725 /* nu.nu */; };
 		3E7244CC15C9EC3600C4E725 /* template.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3E7244C415C9EC3600C4E725 /* template.nu */; };
 		3E7244CD15C9EC3600C4E725 /* test.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3E7244C515C9EC3600C4E725 /* test.nu */; };
+		3E7244D015CA010100C4E725 /* util.nu in Resources */ = {isa = PBXBuildFile; fileRef = 3E7244CF15CA010100C4E725 /* util.nu */; };
 		3EA10B8E15C9C7B4002E791F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA10B8D15C9C7B4002E791F /* UIKit.framework */; };
 		3EA10B9015C9C7B4002E791F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA10B8F15C9C7B4002E791F /* Foundation.framework */; };
 		3EA10B9215C9C7B4002E791F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA10B9115C9C7B4002E791F /* CoreGraphics.framework */; };
@@ -37,6 +38,7 @@
 		3E7244C315C9EC3600C4E725 /* nu.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nu.nu; sourceTree = "<group>"; };
 		3E7244C415C9EC3600C4E725 /* template.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template.nu; sourceTree = "<group>"; };
 		3E7244C515C9EC3600C4E725 /* test.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.nu; sourceTree = "<group>"; };
+		3E7244CF15CA010100C4E725 /* util.nu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = util.nu; sourceTree = "<group>"; };
 		3EA10B8915C9C7B4002E791F /* NuPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NuPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA10B8D15C9C7B4002E791F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3EA10B8F15C9C7B4002E791F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -159,6 +161,7 @@
 			children = (
 				3E7244BD15C9EC3600C4E725 /* lib */,
 				3EA10C8315C9D304002E791F /* main.nu */,
+				3E7244CF15CA010100C4E725 /* util.nu */,
 			);
 			path = nu;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				3E7244CB15C9EC3600C4E725 /* nu.nu in Resources */,
 				3E7244CC15C9EC3600C4E725 /* template.nu in Resources */,
 				3E7244CD15C9EC3600C4E725 /* test.nu in Resources */,
+				3E7244D015CA010100C4E725 /* util.nu in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
