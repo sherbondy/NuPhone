@@ -23,9 +23,8 @@
     (else nil)))
 
 (function alert (*args)
-  (log (list? *args))
-  (let ((title   (nth *args 0))
-        (message (nth *args 1)))
+  (let ((title   (str (nth *args 0)))
+        (message (str (nth *args 1))))
     (set alertView ((UIAlertView alloc) initWithTitle:title 
                                               message:message delegate:nil 
                                     cancelButtonTitle:"Dismiss" otherButtonTitles:nil))

@@ -4,6 +4,8 @@
 (load "match")
 (load "util")
 
+(global NSUTF8StringEncoding 4)
+
 (global UIButtonTypeCustom 0)
 (global UIControlStateNormal 0)
 (global UIButtonTypeRoundedRect 1)
@@ -18,6 +20,8 @@
 (global UIKeyboardWillShowNotification "UIKeyboardWillShowNotification")
 (global UIKeyboardFrameEndUserInfoKey "UIKeyboardFrameEndUserInfoKey")
 (global UIKeyboardAnimationDurationUserInfoKey "UIKeyboardAnimationDurationUserInfoKey")
+
+
 
 (class UIViewController
   (- (void)push:(id)vc is
@@ -47,6 +51,7 @@
     (self setRightBarButton:((UIBarButtonItem alloc) initWithBarButtonSystemItem:(systemButtons 1) target:self action:"rightAction"))))
 
 
+
 (class NPSourceEditorController is UIViewController
   (ivar (id) _navController
         (id) view
@@ -64,7 +69,10 @@
 
   (- (id)rightAction is
     (log "Should save first")
-    (self leftAction))
+    (set $source (@textView text))
+    (self leftAction)
+    (try (eval (parse $source))
+      (catch (exception) (alert (str exception)))))
 
   (- (id)showingKeyboard:(id)notification is
     (log "Need to write Objective-c wrapper for CGRect"))
@@ -83,10 +91,13 @@
 
   (- (id)viewDidAppear:(BOOL)animated is
     (super viewDidAppear:animated)
+    (@textView setText:$source)
     (@textView becomeFirstResponder))
 
   (- (id)viewDidUnload is
     ((NSNotificationCenter defaultCenter) removeObserver:self)))
+
+
 
 (class NPViewController is UIViewController
   (ivar (id) view
@@ -134,6 +145,8 @@
 
     (self addButton)))
 
+
+
 (class NPAppDelegate is UIResponder
   (ivar (id) window 
         (id) rootVC)
@@ -147,6 +160,9 @@
     (log (+ 1 1) "testing")
     (log "Hello" "There " "Old Friend" @window 1)
     (log ((NSBundle mainBundle) resourcePath))
+
+    (set $source (NSString stringWithContentsOfFile:((NSBundle mainBundle) pathForResource:"main" ofType:"nu")
+                                           encoding:NSUTF8StringEncoding error:nil))
     
     (set @rootVC ((NPViewController alloc) init))
     (set navController ((UINavigationController alloc) initWithRootViewController:@rootVC))
